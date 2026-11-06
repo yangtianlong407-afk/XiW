@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "chars": 29,
+      "lines": 2,
+      "path": "guide/intro.md",
+      "top_words": [
+        [
+          "#",
+          1
+        ],
+        [
+          "minisearch",
+          1
+        ],
+        [
+          "入门",
+          1
+        ],
+        [
+          "是一个迷你全文检索工具。",
+          1
+        ]
+      ],
+      "words": 4
+    },
+    {
+      "chars": 29,
+      "lines": 2,
+      "path": "notes.txt",
+      "top_words": [
+        [
+          "python",
+          2
+        ],
+        [
+          "也可以写脚本来统计",
+          1
+        ],
+        [
+          "处理文件",
+          1
+        ]
+      ],
+      "words": 4
+    }
+  ],
+  "root": "docs"
+}

@@ -1,0 +1,254 @@
+### 1. 典型使用场景是什么？
+
+- 退出码：0
+- 输出：
+
+```
+{
+  "question": "典型使用场景是什么？",
+  "answer": "典型场景是：作业写完了想确认「某个词到底在哪个文件里出现过」，或者「哪份文档里出现得最多」。(docs/scope.md:8)",
+  "sources": [
+    "docs/scope.md:8",
+    "docs/scope.md:25"
+  ],
+  "latency": 0.53,
+  "tokens": {
+    "prompt": 175,
+    "completion": 37
+  }
+}
+```
+
+- stderr：
+
+```
+提示：没装 requests，本次用标准库 urllib；建议 pip install -r requirements.txt
+```
+
+### 2. 支持哪些文件后缀？
+
+- 退出码：0
+- 输出：
+
+```
+{
+  "question": "支持哪些文件后缀？",
+  "answer": "支持的后缀为 `.md` 和 `.txt`，大小写不敏感（`.MD` 也算）。(docs/scope.md:13)",
+  "sources": [
+    "docs/scope.md:13",
+    "docs/scope.md:19",
+    "docs/notes.txt:1"
+  ],
+  "latency": 0.67,
+  "tokens": {
+    "prompt": 172,
+    "completion": 32
+  }
+}
+```
+
+- stderr：
+
+```
+提示：没装 requests，本次用标准库 urllib；建议 pip install -r requirements.txt
+```
+
+### 3. 中文为什么不分词？
+
+- 退出码：0
+- 输出：
+
+```
+{
+  "question": "中文为什么不分词？",
+  "answer": "中文不分词的原因：不引入 jieba 之类的分词库，中文按整串统计；`words` 只按空白切分（docs/scope.md:31）。此外，中文不分词导致词频统计对中文没有参考价值，只对英文/代码标识符有意义（docs/scope.md:40）。",
+  "sources": [
+    "docs/scope.md:40",
+    "docs/scope.md:31"
+  ],
+  "latency": 0.8,
+  "tokens": {
+    "prompt": 166,
+    "completion": 69
+  }
+}
+```
+
+- stderr：
+
+```
+提示：没装 requests，本次用标准库 urllib；建议 pip install -r requirements.txt
+```
+
+### 4. 8 条测试里几条是异常场景？
+
+- 退出码：0
+- 输出：
+
+```
+{
+  "question": "8 条测试里几条是异常场景？",
+  "answer": "8 条测试里有 3 条是异常场景（目录不存在、空目录/空文件、非 UTF-8）。出处：docs/scope.md:25",
+  "sources": [
+    "docs/scope.md:25",
+    "docs/scope.md:8"
+  ],
+  "latency": 0.6,
+  "tokens": {
+    "prompt": 180,
+    "completion": 35
+  }
+}
+```
+
+- stderr：
+
+```
+提示：没装 requests，本次用标准库 urllib；建议 pip install -r requirements.txt
+```
+
+### 5. 有没有 Web 界面？
+
+- 退出码：0
+- 输出：
+
+```
+{
+  "question": "有没有 Web 界面？",
+  "answer": "没有 Web 界面。文档明确写着「不提供 Web 界面、不提供 HTTP 接口 —— 只有命令行」（docs/scope.md:34）。",
+  "sources": [
+    "docs/scope.md:34",
+    "docs/scope.md:40"
+  ],
+  "latency": 0.56,
+  "tokens": {
+    "prompt": 151,
+    "completion": 32
+  }
+}
+```
+
+- stderr：
+
+```
+提示：没装 requests，本次用标准库 urllib；建议 pip install -r requirements.txt
+```
+
+### 6. 食堂几点开门？
+
+- 退出码：0
+- 输出：
+
+```
+{
+  "question": "食堂几点开门？",
+  "answer": "文档里没有",
+  "sources": [],
+  "latency": 0.0,
+  "tokens": null
+}
+```
+
+- stderr：
+
+```
+
+```
+
+### 7. 学校图书馆在几楼？
+
+- 退出码：0
+- 输出：
+
+```
+{
+  "question": "学校图书馆在几楼？",
+  "answer": "文档里没有",
+  "sources": [],
+  "latency": 0.0,
+  "tokens": null
+}
+```
+
+- stderr：
+
+```
+
+```
+
+### 8. 社团的指导老师是谁？
+
+- 退出码：0
+- 输出：
+
+```
+{
+  "question": "社团的指导老师是谁？",
+  "answer": "文档里没有",
+  "sources": [],
+  "latency": 0.0,
+  "tokens": null
+}
+```
+
+- stderr：
+
+```
+
+```
+
+### 9. docs/empty.md 里写了什么？
+
+- 退出码：0
+- 输出：
+
+```
+{
+  "question": "docs/empty.md 里写了什么？",
+  "answer": "文档里没有。",
+  "sources": [
+    "docs/scope.md:1",
+    "docs/scope.md:3",
+    "docs/scope.md:7"
+  ],
+  "latency": 0.53,
+  "tokens": {
+    "prompt": 205,
+    "completion": 4
+  }
+}
+```
+
+- stderr：
+
+```
+提示：没装 requests，本次用标准库 urllib；建议 pip install -r requirements.txt
+```
+
+### 10. docs/gbk.txt 里写了什么？
+
+- 退出码：0
+- 输出：
+
+```
+{
+  "question": "docs/gbk.txt 里写了什么？",
+  "answer": "文档里没有。",
+  "sources": [
+    "docs/scope.md:3",
+    "docs/scope.md:7",
+    "docs/scope.md:12"
+  ],
+  "latency": 0.5,
+  "tokens": {
+    "prompt": 215,
+    "completion": 4
+  }
+}
+```
+
+- stderr：
+
+```
+提示：没装 requests，本次用标准库 urllib；建议 pip install -r requirements.txt
+```

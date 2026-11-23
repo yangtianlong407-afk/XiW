@@ -1,0 +1,96 @@
+{
+  "files": [
+    {
+      "chars": 0,
+      "lines": 0,
+      "path": "empty.md",
+      "top_words": [],
+      "words": 0
+    },
+    {
+      "chars": 29,
+      "lines": 2,
+      "path": "guide/intro.md",
+      "top_words": [
+        [
+          "minisearch",
+          1
+        ],
+        [
+          "一",
+          1
+        ],
+        [
+          "个",
+          1
+        ],
+        [
+          "你",
+          1
+        ],
+        [
+          "入",
+          1
+        ]
+      ],
+      "words": 4
+    },
+    {
+      "chars": 29,
+      "lines": 2,
+      "path": "notes.txt",
+      "top_words": [
+        [
+          "python",
+          2
+        ],
+        [
+          "也",
+          1
+        ],
+        [
+          "以",
+          1
+        ],
+        [
+          "件",
+          1
+        ],
+        [
+          "写",
+          1
+        ]
+      ],
+      "words": 4
+    },
+    {
+      "chars": 1214,
+      "lines": 44,
+      "path": "scope.md",
+      "top_words": [
+        [
+          "文",
+          26
+        ],
+        [
+          "不",
+          24
+        ],
+        [
+          "的",
+          18
+        ],
+        [
+          "件",
+          15
+        ],
+        [
+          "出",
+          11
+        ]
+      ],
+      "words": 153
+    }
+  ],
+  "root": "docs"
+}
